@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>税計算ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>税計算ツール</h1>
+        <form id="tax-form">
+            <div class="form-group">
+                <label for="income">収入</label>
+                <input type="number" id="income" name="income" value="0" required>
+            </div>
+            <div class="form-group">
+                <label for="age">年齢</label>
+                <input type="number" id="age" name="age" value="0" required>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button submit">計算</button>
+            </div>
+        </form>
+        <div id="result" class="before">
+            <div id="summary"><span class="amount">0</span> <span style="font-size:0.9em">円徴収されます。</span></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>税</th>
+                        <th>税率</th>
+                        <th>金額</th>
+                    </tr>
+                </thead>
+                <tbody id="result-table">
+                    <tr>
+                        <td>A税</td>
+                        <td>0%</td>
+                        <td>0円</td>
+                    </tr>
+                    <tr>
+                        <td>B税</td>
+                        <td>0%</td>
+                        <td>0円</td>
+                    </tr>
+                    <tr class="total">
+                        <td>C税</td>
+                        <td>0%</td>
+                        <td>0円</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <small id="annotation">※このツールの内容は不正確な可能性があります。検証を行って下さい。</small>
+    <script src="main.js"></script>
+</body>
+</html>

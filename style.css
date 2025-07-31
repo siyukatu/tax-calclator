@@ -54,7 +54,7 @@ body {
                     all: unset;
                     width: 100%;
                     padding: 10px;
-                    background-color: #111;
+                    background-color: #089781;
                     color: #fff;
                     font-size: 0.95em;
                     text-align: center;
@@ -63,7 +63,7 @@ body {
                     transition: background-color 0.1s ease;
                     box-sizing: border-box;
                     &:hover {
-                        background-color: #333;
+                        background-color: #008771;
                     }
                     &:disabled {
                         background-color: #ccc;
